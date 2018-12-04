@@ -12,5 +12,8 @@
         insert into userbean (username,password) values (#{username},#{password})
     </insert>
 
+    <select id="selectUserByid" parameterType="int" resultType="userBean">
+        select * from userbean where id = #{id}
+    </select>
 
 </mapper>

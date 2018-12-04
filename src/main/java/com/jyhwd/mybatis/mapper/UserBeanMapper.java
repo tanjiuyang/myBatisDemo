@@ -15,4 +15,6 @@ public interface UserBeanMapper {
      * @return int
      */
     public int insertUser(UserBean user);
+
+    public UserBean selectUserByid(int id);
 }
